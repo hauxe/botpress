@@ -12,4 +12,5 @@
 *.out
 
 node_modules
-frontend/build
+backend/build
+vendor

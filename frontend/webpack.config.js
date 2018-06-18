@@ -15,7 +15,7 @@ const webConfig = {
     lite: './lite.jsx'
   },
   output: {
-    path: path.resolve(__dirname, './build/js'),
+    path: path.resolve(__dirname, '../backend/build/js'),
     publicPath: '/js/',
     filename: '[name].bundle.js'
   },
@@ -35,19 +35,19 @@ const webConfig = {
     new CopyWebpackPlugin([
       {
         from: path.resolve(__dirname, './index.html'),
-        to: path.resolve(__dirname, './build/index.html')
+        to: path.resolve(__dirname, '../backend/build/index.html')
       },
       {
         from: path.resolve(__dirname, './lite.html'),
-        to: path.resolve(__dirname, './build/lite/index.html')
+        to: path.resolve(__dirname, '../backend/build/lite/index.html')
       },
       {
         from: path.resolve(__dirname, './img'),
-        to: path.resolve(__dirname, './build/img')
+        to: path.resolve(__dirname, '../backend/build/img')
       },
       {
         from: path.resolve(__dirname, './audio'),
-        to: path.resolve(__dirname, './build/audio')
+        to: path.resolve(__dirname, '../backend/build/audio')
       }
     ])
   ],

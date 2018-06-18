@@ -40,9 +40,9 @@ export default class InjectedModuleView extends React.Component {
       const shortName = moduleName.replace(/^botpress-/i, '').replace(/^@botpress\//i, '')
 
       if (isLite) {
-        script.src = `/js/modules/${shortName}/${subView}`
+        script.src = `/public/js/modules/${shortName}/${subView}`
       } else {
-        script.src = `/js/modules/${shortName}`
+        script.src = `/public/js/modules/${shortName}`
       }
 
       document.getElementsByTagName('head')[0].appendChild(script)
